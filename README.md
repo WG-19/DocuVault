@@ -5,7 +5,7 @@ A full-stack web application for managing file uploads, user authentication, and
 ## Features
 
 - User authentication and profile management
-- File upload and management with size and type validation
+- File upload, download and management with size and type validation
 - Dashboard with file statistics and visualizations
 - Modern, responsive UI built with React and Ant Design
 - Secure authentication using JWT
