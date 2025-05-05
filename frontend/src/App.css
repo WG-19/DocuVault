@@ -1,0 +1,553 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #fff;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Auth Form Styles */
+.auth-form-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.auth-form-container .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.auth-form-container .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.auth-form-container .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.auth-form-container .form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.auth-form-container .form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.auth-form-container button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form-container .error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.auth-form-container .flex.justify-center {
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.auth-form-container .flex.justify-center span {
+  display: inline;
+  vertical-align: middle;
+}
+
+.auth-form-container .toggle-form-link {
+  display: inline;
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.auth-form-container .toggle-form-link:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.dashboard-content {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  padding: 24px;
+  margin-top: 64px;
+}
+
+.dashboard-header {
+  margin-top: 24px;
+}
+
+.dashboard-section {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.dashboard-title {
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  padding: 0 16px;
+}
+
+.dashboard-user {
+  color: rgba(0, 0, 0, 0.45);
+  margin: 0;
+}
+
+.dashboard-content {
+  width: 100%;
+}
+
+/* Center cards in the available space */
+.ant-row {
+  justify-content: center;
+  width: 100%;
+}
+
+.ant-col {
+  max-width: 300px;
+  margin: 0 8px;
+}
+
+/* Adjust card spacing */
+.ant-card {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.file-upload-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 2rem;
+}
+
+.dashboard-cards {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  padding: 24px;
+}
+
+.dashboard-cards .ant-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.dashboard-cards .ant-col {
+  margin: 0;
+  width: 250px;
+}
+
+.dashboard-cards .ant-card {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.dashboard-cards .ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dashboard-cards .ant-statistic-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.file-upload-section h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.file-upload-section {
+  margin-bottom: 24px;
+}
+
+.file-upload-section h2 {
+  margin-bottom: 16px;
+  color: #1890ff;
+}
+
+/* File Management Styles */
+.file-management-section {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.file-management-title {
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  padding: 0 16px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* File Upload Styles */
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 24px;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+.drop-zone.active {
+  border-color: #1890ff;
+}
+
+.drop-zone-content {
+  padding: 20px;
+}
+
+.custom-file-upload {
+  background-color: #1890ff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.custom-file-upload:hover {
+  background-color: #40a9ff;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.file-list-table {
+  width: 100%;
+  margin-top: 24px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-container {
+  width: 100%;
+  flex: 1;
+  min-height: 200px;
+}
+
+.file-table {
+  width: 100% !important;
+  min-height: 200px;
+}
+
+.ant-table {
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.ant-table-container {
+  overflow-x: auto;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 12px 16px;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 12px 16px;
+}
+
+.ant-table-pagination {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.download-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* Profile Styles */
+.profile-content-area {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.profile-card {
+  margin: 0 auto 24px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.profile-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+  margin-left: 260px; /* Adjust based on your sidebar width */
+}
+
+.profile-content .ant-form-item {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.profile-content .ant-table {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 800px;
+  overflow-x: auto;
+}
+
+.profile-content .ant-table-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-content .ant-table-thead > tr > th {
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+
+.profile-content .ant-table-tbody > tr > td {
+  padding: 8px 12px;
+}
+
+.profile-content .ant-table-thead > tr > th:first-child,
+.profile-content .ant-table-tbody > tr > td:first-child {
+  padding-left: 24px;
+}
+
+.profile-content .ant-table-thead > tr > th:last-child,
+.profile-content .ant-table-tbody > tr > td:last-child {
+  padding-right: 24px;
+}
+
+.profile-content .ant-btn-primary {
+  margin-bottom: 24px;
+  width: auto;
+  min-width: 180px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.profile-content .ant-btn-link {
+  padding: 0;
+  margin: 0 8px;
+}
+
+.profile-content .compact-form-button {
+  width: auto;
+  min-width: 120px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.profile-content .button-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+/* Profile Card Styles */
+.profile-card {
+  width: 700px;
+  max-width: 100%;
+  min-width: 400px;
+  margin: 0 auto 24px auto;
+  box-sizing: border-box;
+}
+
+/* Profile Table Styles */
+.profile-table {
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+/* Profile Content Area */
+.profile-content-area {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Profile Sections Layout */
+.profile-sections {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Table Header Styles */
+.profile-table th {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  background: #f8f9fa;
+}
+
+/* Table Body Styles */
+.profile-table td {
+  padding: 12px 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .profile-card {
+    width: 100%;
+    margin: 0 auto 16px auto;
+  }
+  
+  .profile-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .profile-content {
+    padding: 16px;
+    margin-left: 0;
+  }
+  
+  .profile-section {
+    margin-bottom: 16px;
+  }
+
+  .profile-content .ant-table {
+    margin-top: 16px;
+  }
+}

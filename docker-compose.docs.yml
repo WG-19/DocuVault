@@ -1,0 +1,16 @@
+services:
+  docs:
+    image: userportal_local_docs
+    container_name: userportal_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./userportal:/app/userportal:z
+    ports:
+      - '9000:9000'
+    command: /start-docs

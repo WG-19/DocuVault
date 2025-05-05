@@ -1,0 +1,23 @@
+.app-layout {
+    min-height: 100vh;
+  }
+  
+  .ant-layout-header {
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  nav a {
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #1890ff;
+  }
+  
+  nav a.active {
+    color: #1890ff;
+  }
