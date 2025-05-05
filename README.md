@@ -1,4 +1,4 @@
-# UserPortal
+# DocuVault
 
 A full-stack web application for managing file uploads, user authentication, and profiles with a modern dashboard interface.
 
@@ -166,7 +166,3 @@ To run the tests, check your test coverage, and generate an HTML coverage report
 ### Live reloading and Sass CSS compilation
 
 Moved to [Live reloading and SASS compilation](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally.html#using-webpack-or-gulp).
-
-## Deployment
-
-The following details how to deploy this application.
